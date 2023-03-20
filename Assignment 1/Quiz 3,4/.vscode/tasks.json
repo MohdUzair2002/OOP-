@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build active file",
+			"command": "D:\\Software\\C++ Comipler_mingw\\Installatin\\MinGW\\bin\\g++.exe",
+			// "command": "D:\\Software\\C++ Comipler_mingw\\Installatin\\MinGW\\bin\\g++.exe",
+			"args": [
+				"*.cpp",
+				"-o",
+				"main.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: \"D:\\Software\\C++ Comipler_mingw\\Installatin\\MinGW\\bin\\g++.exe\""
+		}
+	]
+}

@@ -1,0 +1,10 @@
+Application of Fibonacci Series:-
+
+Flower Petals. In almost all flowering plants, the number of petals on the flower is a Fibonacci number. 
+Seed Heads.
+Pine Cones.
+Fruits and Vegetables.
+Branching Pattern in Trees.
+Shells.
+Spiral Galaxies.
+Hurricanes.

@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Ball",
+            "request": "launch",
+            "mainClass": "Ball",
+            "projectName": "Java_9cf6eba1"
+        },
+        "Remove unnecessary semicolons."
+    ]
+}

@@ -1,0 +1,10 @@
+Real Life Scenario:
+ In this ,I have choosed a real life scnenario of a university department,in which there are students,teachers and class room and applied appropiate case of relationship to them.
+For Association:-
+In this in Deparment and Student Association is done.
+For Aggregation:-
+In this in Department and teacher ,aggregation is done.
+For Composition:-
+In this in Department and Classroom ,Composition is done.
+For Inheritance:-
+In this in Students and Boys and girls ,Inheritance is done.

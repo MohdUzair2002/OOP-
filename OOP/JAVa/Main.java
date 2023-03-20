@@ -1,0 +1,52 @@
+public class Main {
+    public static void main(String[] args) {
+        Matrix2dArray m1 = new Matrix2dArray(3,3);
+        m1.setElem(0, 0, 1);
+        m1.setElem(0, 1, 2);
+        m1.setElem(0, 2, 3);
+        m1.setElem(1, 0, 4);
+        m1.setElem(1, 1, 5);
+        m1.setElem(1, 2, 6);
+        m1.setElem(2, 0, 7);
+        m1.setElem(2, 1, 8);
+        m1.setElem(2, 0, 9);
+        System.out.println("Creating an object m1 from Matrix2dArray :");
+        System.out.println(m1);
+        System.out.println("-----------------------------------");
+        MatrixRowWise m2 = new MatrixRowWise(3, 2);
+        m2.setElem(0, 0, 1);
+        m2.setElem(0, 1, 2);
+        m2.setElem(1, 0, 3);
+        m2.setElem(1, 1, 4);
+        m2.setElem(2, 0, 5);
+        m2.setElem(2, 1, 6);
+        System.out.println("Creating an object m2 from MatrixRowWise :");
+        System.out.println(m2);
+        System.out.println("-----------------------------------");
+        System.out.println("Delinearizing m2 into Matrix2dArray :");
+        System.out.println(m2.delinearize());
+        System.out.println("-----------------------------------");
+        System.out.println("Multiplying m1 by m2 :");
+        System.out.println(m1.multiply(m2));
+        System.out.println("-----------------------------------");
+        MatrixColWise m3 = new MatrixColWise(2, 3);
+        m3.setElem(0, 0, 1);
+        m3.setElem(0, 1, 2);
+        m3.setElem(0, 2, 3);
+        m3.setElem(1, 0, 4);
+        m3.setElem(1, 1, 5);
+        m3.setElem(1, 2, 6);
+        System.out.println("Creating an object m3 from MatrixColWise :");
+        System.out.println(m3);
+        System.out.println("-----------------------------------");
+        System.out.println("Delinearizing m3 into Matrix2dArray :");
+        System.out.println(m3.delinearize());
+        System.out.println("-----------------------------------");
+        Matrix m4 = m3.multiply(m2);
+        System.out.println("Multiplying m3 by m2 :");
+        System.out.println(m4);
+        System.out.println("-----------------------------------");
+        System.out.println("Delinearizing the above result into Matrix2dArray :");
+        System.out.println(((MatrixColWise) m4).delinearize());
+    }
+}
